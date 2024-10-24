@@ -1,124 +1,579 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon" />
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-        
-        <link rel="stylesheet" href="/styles/index.css">
+		<link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon" />
 
-        <title>Slack es tu plataforma de productividad | Slack </title>
-    </head>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+		/>
 
-    <body>
-        <nav>
-            <div  role="navigation" class="mobile-tablet-nav-container">
+		<link rel="stylesheet" href="/styles/index.css" />
+
+		<title>Slack es tu plataforma de productividad | Slack</title>
+	</head>
+
+	<body>
+		<!-- nav mobile -->
+		<nav role="navigation" class="mobile-nav container">
+			<div class="mobile-nav-logo">
+				<img
+					src="/media/logos/logo-slack-salesforce-black.png"
+					alt="Logo de Slack + Salesforce"
+				/>
+			</div>
+
+			<div>
+				<img
+					src="/media/icons/menu-hamburguesa.svg"
+					alt="Icono de menú de hamburguesa"
+				/>
+			</div>
+		</nav>
+		<!-- nav desktop -->
+		<nav role="navigation" class="desktop-nav container">
+			<div class="desktop-nav-left">
+				<div class="mobile-nav-logo">
+					<img
+						src="/media/logos/logo-slack-salesforce-black.png"
+						alt="Logo de Slack + Salesforce"
+					/>
+				</div>
+				<ul>
+					<li>
+						Funciones
+
+						<img
+							src="/media/icons/flecha-negra-abajo.svg"
+							alt="flecha negra abajo"
+						/>
+					</li>
+					<li>
+						Soluciones
+
+						<img
+							src="/media/icons/flecha-negra-abajo.svg"
+							alt="flecha negra abajo"
+						/>
+					</li>
+					<li>
+						Empresa
+
+						<img
+							src="/media/icons/flecha-negra-abajo.svg"
+							alt="flecha negra abajo"
+						/>
+					</li>
+					<li>
+						Recursos
+
+						<img
+							src="/media/icons/flecha-negra-abajo.svg"
+							alt="flecha negra abajo"
+						/>
+					</li>
+					<li>
+						Precios
+
+						<img
+							src="/media/icons/flecha-negra-abajo.svg"
+							alt="flecha negra abajo"
+						/>
+					</li>
+				</ul>
+			</div>
+
+			<div class="desktop-nav-buttons">
+				<p>Conectarse</p>
+				<button class="show-on-desktop-xxl btn-primary">
+					Hablar con ventas
+				</button>
+				<button class="btn-secundary">Primeros pasos</button>
+			</div>
+		</nav>
+		<!-- header -->
+		<header class="header container">
+			<h1>
+				Pensado para las personas.
+				<span>Creado para la productividad</span>
+			</h1>
+			<button class="btn-secundary">Primeros pasos</button>
+			<p>
+				<strong>Slack puede probarse de manera grautita</strong>
+				durante el tiempo que se quiera
+			</p>
+			<div class="logos">
+				<img src="/media/logos/logo-airbnb.png" alt="logo airbnb" />
+				<img src="/media/logos/logo-nasa.png" alt="logo nasa" />
+				<img src="/media/logos/logo-uber.png" alt="logo uber" />
+				<img src="/media/logos/logo-target.png" alt="logo target" />
+				<img src="/media/logos/logo-nyt.png" alt="logo new york times" />
+				<img src="/media/logos/logo-etsy.png" alt="logo etsy" />
+			</div>
+		</header>
+		<!-- section video -->
+		<section class="hero">
+			<div class="hero-container container">
+				<video class="video-hero" autoplay loop muted preload="auto">
+					<source src="/media/videos/hero.webm" />
+				</video>
+			</div>
+		</section>
+		<!-- features -->
+		<section class="features">
+			<!-- speed part -->
+			<div class="feature">
+				<div class="features-media">
+					<div class="features-img-container">
+						<img
+							class="show-on-mobile"
+							src="/media/images/speed-mobile.png"
+							alt="Aplicacion de Slack en un telefono"
+						/>
+						<video class="hide-on-mobile" autoplay muted loop autoplay="auto">
+							<source src="/media/videos/speed.webm" />
+						</video>
+					</div>
+				</div>
+				<div class="features-description container">
+					<div class="container-480p">
+						<h2>
+							Agiliza el trabajo con trodas tus herramientas en un mismo lugar
+						</h2>
+						<p>
+							Automatiza las tareas rutinarias con las posivilidades de la IA
+							generativa y simplifica tu flujo de trabajo con tus aplicaciones
+							favoritas listas para usar en slack
+						</p>
+						<a href="#">Más información sobre la plataforma Slack</a>
+					</div>
+				</div>
+			</div>
+			<!-- flexibility part -->
+			<div class="feature feauture-inverse-on-desktop">
+				<div class="features-media feature-reverse">
+					<div class="features-img-container">
+						<img
+							class="show-on-mobile"
+							src="/media/images/flexibility-mobile.png"
+							alt="Aplicacion de Slack en un telefono"
+						/>
+						<video class="hide-on-mobile" autoplay muted loop autoplay="auto">
+							<source src="/media/videos/ia4-flexibility.webm" />
+						</video>
+					</div>
+				</div>
+				<div class="features-description container">
+					<div class="container-480p">
+						<h2>Selecciona como quieres trabajar</h2>
+						<p>
+							Slack te otorga la flexibilidad para trabajar cuando, donde y como
+							tu quieras. Puedes chatear, enviar clips de audio y video o unirte
+							a una junta para discutir asuntos en directo
+						</p>
+						<a href="#">
+							Obten mas informacion acerca de la comunicacion flexible
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- conectivity part -->
+			<div class="feature">
+				<div class="features-media">
+					<div class="features-img-container">
+						<img
+							class="show-on-mobile"
+							src="/media/images/connectedness-mobile.png"
+							alt="Aplicacion de Slack en un telefono"
+						/>
+						<video class="hide-on-mobile" autoplay muted loop autoplay="auto">
+							<source src="/media/videos/connectedness.mp4" />
+						</video>
+					</div>
+				</div>
+				<div class="features-description container">
+					<div class="container-480p">
+						<h2>Reune tu equipo</h2>
+						<p>
+							Los canales son el corazon de Slack. Son espacios organizados para
+							todo el mundo que contienen todo lo necesario para trabajar. Los
+							canales permiten conectarse entre departamentos, oficinas, zonas
+							horarias e incluso otras empresas.
+						</p>
+						<a href="#">Obtener mas informacion sobre los canales</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- stadistics -->
+		<section class="stadistics">
+			<div class="stadistics-container">
+				<h2 class="container">Equipos grandes y pequeños confian en Slack</h2>
+				<p class="container">
+					Slack se adapta de forma segura para garantizar la colaboracion en las
+					empresas mas importantes del mundo.
+				</p>
+				<div class="stadistics-btn-container container">
+					<button class="btn-secundary">Conoce Slack para empresas</button>
+
+					<button class="btn-primary">Hablar con ventas</button>
+				</div>
+				<div class="stadistic-data container">
+					<!-- NO SE DONDE AÑADIR ESTOS ESTILOS PARA QUE SE ALINEEN EN VERSION MOVIL
+						style="
+							display: flex;
+							flex-direction: column;
+							align-items: center;" 
+					-->
+					<div class="stadistic-data-element">
+						<h2>85%</h2>
+						<p class="stadistic-description">
+							de usuarios afirma que Slack ha mejorado la comunicacion*.
+						</p>
+					</div>
+					<div class="stadistic-data-element">
+						<h2>86%</h2>
+						<p class="stadistic-description">
+							creen que su capacidad para trabajar a distancia he mejorado.
+						</p>
+					</div>
+					<div class="stadistic-data-element">
+						<h2>88%</h2>
+						<p class="stadistic-description">
+							se sienten mas conectados con sus equipos
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="stadistics-video-container">
+				<video controls>
+					<source src="/media/videos/vodafone.mp4" />
+				</video>
+			</div>
+			
+			<div class="video-description">
+				<p>"Muchos empleados del sector tecnologico estaban empezando una transicion natural hacia Slack. 
+					Por lo tanto, seguuimos los pasos de nuestros usuarios hacia lo que a dia de hoy es una de nuestras
+					herramientas mas importantes</p>
+				<p><strong>Matt Beal <br>
+				Director de Estrategia y Arquitectura Tecnologica, Vodafone</strong></p>
+				<div class="article-link">
+					<a href="#">Ver más casos de clientes</a>
+					<p class="arrow">⭢</p>
+				</div>
+			</div>
+
+			<p class="stadistic-legal-text container">
+				*Promedio ponderado. Basado en una encuesta de 2707 respuestas de
+				usuarios semanales de Slack en EE.UU., Reino Unido, Australia y
+				Canadá, con un margen de error del 2% a 90% CI. (diciembre de 2021)
+				</p>
+			</div>
+		</section>
+		<!-- cards -->
+		<section class="news">
+			<div class="title-news container">
+				<h2>Explora con mas profundidad una nueva forma de trabajar</h2>
+			</div>
+			<div class="news-container container">
+				<article class="news-cards">
+					<div class="article-image-container">
+						<img src="/media/images/img-promo-01.jpg" alt="imagen promo 1">
+					</div>
+					<div class="article-description">
+						<div class="article-title">
+							<h2>Funciones</h2>
+							<p>Echa un vistazo a todo lo que puede hacer la plataforma</p>
+						
+							<div class="article-link">
+								<a href="#">EXAMINA LAS FUNCIONES</a>
+								<p class="arrow">⭢</p>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="news-cards">
+					<div class="article-image-container">
+						<img src="/media/images/img-promo-02.jpg" alt="imagen promo 2">
+					</div>
+					<div class="article-description">
+						<div class="article-title">
+							<h2>Blog</h2>
+							<p>10 Funciones que debes conocer (y adorar) en el 10º aniversario de Slack</p>
+						
+							<div class="article-link">
+								<a href="#">MAS INFORMACION</a>
+								<p class="arrow">⭢</p>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="news-cards">
+					<div class="article-image-container">
+						<img src="/media/images/img-promo-03.jpg" alt="imagen promo 3">
+					</div>
+					<div class="article-description">
+						<div class="article-title">
+							<h2>Soluciones</h2>
+							<p>Descubre todo lo que puede hacer Slack por tu equipo</p>
+							<div class="article-link">
+								<a href="#">EXPLORA SOLUCIONES</a>
+							<p class="arrow">⭢</p>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="news-cards">
+					<div class="article-image-container">
+						<img src="/media/images/img-promo-04.jpg" alt="imagen promo 4">
+					</div>
+					<div class="article-description container">
+						<div class="article-title">
+							<h2>Cómo</h2>
+							<p>Empieza con buen pie con la introduccion de Slack</p>
+							<div class="article-link">
+								<a href="#">DESCUBRE COMO HACERLO</a>
+								<p class="arrow">⭢</p>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="news-cards">
+					
+				</article>
+			</div>
+		</section>
+		<!-- discover -->
+		<section class="section-discover">
+			<div class="title-discover">
+				<h2>Descubre todo lo que puedes conseguir con Slack</h2>
+			</div>
+			<div class="stadistics-btn-container container">
+				<button class="btn-secundary">PRIMEROS PASOS</button>
+
+				<button class="btn-thirdary">HABLAR CON VENTAS</button>
+			</div>
+		</section>
+		<!-- languages y RRSS -->
+		<section class="languages container">
+			<div class="language">
+				<button class="select-language-button">
+					<img src="/media/icons/icon-mundo.svg" alt="world icon">
+					<strong>Cambiar region</strong>
+					<img src="/media/icons/flecha-negra-abajo.svg" alt="">
+				</button>
+			</div>
+			<div class="logos-rrss-container container">
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/icons/icon-linkedin.svg" alt="linkedin icon" class="logo-image">
+					</a>
+				</div>
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/logos/logo-instagram.svg" alt="instagram logo" class="logo-image">
+					</a>
+				</div>
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/logos/logo-facebook.svg" alt="facebook logo" class="logo-image">
+					</a>
+				</div>
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/logos/logo-x.svg" alt="X logo" class="logo-image">
+					</a>
+				</div>
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/logos/logo-youtube.svg" alt="youtube logo" class="logo-image">
+					</a>
+				</div>
+				<div class="logo-link">
+					<a href="#">
+						<img src="/media/logos/logo-tiktok.svg" alt="tiktok logo" class="logo-image">
+					</a>
+				</div>
+			</div>
+		</section>
+		<div class="divisor"></div>
+		<!-- footer -->
+		<footer>
+			<!-- footer desktop -->
+			<div class="footer-desktop container">
                 <div>
-                    <img src="/media/logos/logo-slack-salesforce-black.png" alt="Logo de Slack + Salesforce">
+                    <img src="/media/logos/logo-slack.svg" alt="logo slack">
                 </div>
-    
-                <div>
-                    <img src="/media/icons/menu-hamburguesa.svg" alt="Icono de menú de hamburguesa">    
+                <div class="list-container">
+                    <div class="list-block">
+                        <div class="title-list">
+                            <p>PRODUCTO</p>
+                        </div>
+                        <div class="footer-list-elements">
+                            <ul>
+                                <li>Ver la demostracion</li>
+                                <li>Precios</li>
+                                <li>De pago vs. Gratuito</li>
+                                <li>Accesibilidad</li>
+                                <li>Versiones destacadas</li>
+                                <li>Registro de cambios</li>
+                                <li>Estado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-block">
+                        <div class="title-list">
+                            <p>FUNCIONES</p>
+                        </div>
+                        <div class="footer-list-elements">
+                            <ul>
+                                <li>Canales</li>
+                                <li>Slack Connect</li>
+                                <li>Creador de flujos de trabajo</li>
+                                <li>Mensajeria</li>
+                                <li>Juntas</li>
+                                <li>Canvas</li>
+                                <li>Listas</li>
+                                <li>Clips</li>
+                                <li>Buscar</li>
+                                <li>Aplicaciones e integraciones</li>
+                                <li>Uso compartido de archivos</li>
+                                <li>IA de Slack</li>
+                                <li>Seguridad</li>
+                                <li>Administracion de claves de cifrado (EKM)</li>
+                                <li>Atlas de Slack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-block">
+                        <div class="title-list">
+                            <p>SOLUCIONES</p>
+                        </div>
+                        <div class="footer-list-elements">
+                            <ul>
+                                <li>Ingenieria</li>
+                                <li>TI</li>
+                                <li>Atencion al Cliente</li>
+                                <li>Ventas</li>
+                                <li>Gestion de proyectos</li>
+                                <li>Marketing</li>
+                                <li>Seguridad</li>
+                                <li>Tecnologia</li>
+                                <li>Medios de comunicacion</li>
+                                <li>Servicios financieros</li>
+                                <li>Venta minorista</li>
+                                <li>Sector publico</li>
+                                <li>Educacion</li>
+                                <li>ciencias de la vida y la salud</li>
+                                <li>Ver todas las soluciones</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-block">
+                        <div class="title-list">
+                            <p>RECURSOS</p>
+                        </div>
+                        <div class="footer-list-elements">
+                            <ul>
+                                <li>Centro de ayuda</li>
+                                <li>Novedades</li>
+                                <li>Biblioteca de recursos</li>
+                                <li>Blog de Slack</li>
+                                <li>Comunidad</li>
+                                <li>Casos de clientes</li>
+                                <li>Eventos</li>
+                                <li>Desarrolladores</li>
+                                <li>Socios</li>
+                                <li>Ofertas de nuestros socios</li>
+                                <li>Directorio de Aplicaciones</li>
+                                <li>Certificacion de Slack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-block">
+                        <div class="title-list">
+                            <p><strong>¿PORQUE ELEGIR SLACK?</strong></p>
+                        </div>
+                        <div class="footer-list-elements">
+                            <ul>
+                                <li>Slack vs. Correo</li>
+                                <li>Empresa</li>
+                                <li>Pequeña empresa</li>
+                                <li>Productividad</li>
+                                <li>Administracion de tareas</li>
+                                <li>Capacidad de adaptacion</li>
+                                <li>Confianza</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="desktop-nav-container">
-                <div class="Slack-first-logo">
-                    <img src="/media/logos/logo-slack-salesforce-black.png" alt="Logo de Slack + Salesforce">
-                </div>
-                <div class="element-list">
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h2>Funciones</h2>
-                        </div>
-                        <div class="icon-list">
-                            <img src="./media/icons/flecha-negra-abajo.svg" alt="black arrow looking down">
-                        </div>
+            <div class="divisor"></div>
+			<!-- footer mobile -->
+            <div class="footer-mobile">
+                <div class="footer-mobile-container container">
+                    <div class="footer-box">
+                            <p><strong>PRODUCTO</strong></p>
+                            <img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
                     </div>
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h2>Soluciones</h2>
-                        </div>
-                        <div class="icon-list">
-                            <img src="./media/icons/flecha-negra-abajo.svg" alt="black arrow looking down">
-                        </div>
+                    <div class="footer-box">
+						<p><strong>¿PORQUE ELEGIR SLACK</strong></p>
+						<img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
+                        
                     </div>
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h2>Empresa</h2>
-                        </div>
+                    <div class="footer-box">
+                            <p><strong>FUNCIONES</strong></p>
+                            <img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
                     </div>
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h2>Recursos</h2>
-                        </div>
-                        <div class="icon-list">
-                            <img src="./media/icons/flecha-negra-abajo.svg" alt="black arrow looking down">
-                        </div>
+                    <div class="footer-box">
+                            <p><strong>SOLUCIONES</strong></p>
+                            <img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
                     </div>
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h2>Precio</h2>
-                        </div>
+                    <div class="footer-box">
+                            <p><strong>RECURSOS</strong></p>
+                            <img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
+                    </div>
+                    <div class="footer-box">
+                            <p><strong>EMPRESA</strong></p>
+                            <img src="/media/icons/flecha-negra-derecha.svg" alt="right black arrow">
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div class="container-list">
-                        <div class="text-list">
-                            <h3>Conectarse</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="talk-sales">
-                            <button>HABLAR CON VENTAS</button>
-                        </div>
-                        <div class="first-steeps">
-                            <button>PRIMEROS PASOS</button>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </nav>
-        <section class="heading">
-            <div class="heading-container">
-                <div class="heading-title">
-                    <h1>Pensado para las personas. Creado para la productividad</h1>
-                </div>
-                <div>
-                    <div class="first-steeps">
-                        <button>PRIMEROS PASOS</button>
-                    </div>
-                </div>
-                <div class="heading-subtitle">
-                    <h3><strong>Slack puede probarse de forma gratuita </strong>durante el tiempo que se quiera</h3>
-                </div>
-                <div class="partners-icons">
-                    <div class="airbnb-icon">
-                        <img src="/media/logos/logo-airbnb.png" alt="logo airbnb">
-                    </div>
-                    <div class="nasa-icon">
-                        <img src="/media/logos/logo-nasa.png" alt="logo nasa">
-                    </div>
-                    <div class="uber-icon">
-                        <img src="/media/logos/logo-uber.png" alt="logo uber">
-                    </div>
-                    <div class="target-icon">
-                        <img src="/media/logos/logo-target.png" alt="logo red target">
-                    </div>
-                    <div class="new-york">
-                        <img src="/media/logos/logo-nyt.png" alt="logo new york times">
-                    </div>
-                    <div class="etsy">
-                        <img src="/media/logos/logo-etsy.png" alt="logo etsy">
-                    </div>
-                </div>
-                <div class="video-presentation">
-                    <video src="/media/videos/hero.webm" preload="auto"></video>
-                </div>
-            </div>
-        </section>
-    </body>
+            <div class="divisor"></div>
+			<!-- footer end -->
+			<div class="footer-terms">
+				<div class="footer-logo-slack">
+					<img
+						src="/media/logos/logo-slack-salesforce-black.png"
+						alt="Logo de Slack + Salesforce"
+					/>
+				</div>
+				<div class="footer-end-container">
+					<ul class="footer-end-list">
+						<li class="link-download">
+							Descargar Slack
+							<img src="/media/icons/icon-download.svg" alt="boton descarga con una nube">
+						</li>
+						<li>Privacidad</li>
+						<li>Terminos</li>
+						<li>Preferencias de cookies</li>
+						<li>Sus opciones de Privacidad
+							<img src="/media/icons/ccpa-blue.svg" alt="boton on/off">
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					©2024 Slack Technologies, LLC, una empresa de Salesforce. Todos los derechos reservados. Las distintas marcas comerciales pertenecen a sus respectivos propietarios.
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
