@@ -392,10 +392,11 @@ a {
 		width: 100%;
 	}
 
-	.footer-mobile-comtaimer {
+	.footer-mobile-container {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		padding-top: 8px;
 	}
 
 	.footer-box {
@@ -407,6 +408,7 @@ a {
 	.footer-terms {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 	}
 
 	.footer-logo-slack {
