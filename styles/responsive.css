@@ -25,6 +25,7 @@
 
     .stadistic-data {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -108,7 +109,10 @@
         flex-direction: row;
     }
 
-    .feature-media {
+    
+
+    .feature-media,
+    .features-description {
         flex: 1;
     }
 
@@ -122,9 +126,6 @@
         flex-direction: row-reverse;
     }
 
-    .stadistic-data {
-        flex-direction: row;
-    }
     
     .stadistics-video-container video {
 		width: 100%;
@@ -141,12 +142,16 @@
         grid-template-columns: repeat(4, 1fr)
     }
 
+    footer {
+        padding: 20px 0px;
+    }
     .footer-mobile {
 		display: none;
 	}
 
     .footer-desktop {
         display: flex;
+        padding-bottom: 24px;
     }
     
     .list-container{
@@ -155,6 +160,9 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
+    .footer-desktop img {
+        padding: 12px 20px;
+    }
 
     .footer-terms {
         flex-direction: row;
