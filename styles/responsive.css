@@ -2,199 +2,188 @@
 /* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
 
 /* Media query para  tablet (mayores a 480px y hasta 1023px) */
-@media (min-width: 427px)  {
-    :root {
-        --container-width:85%;
-    }
-
-    .show-on-mobile {
-        display: none;
-    }
-
-    .hide-on-mobile {
-        display: inherit;
-    }
-
-    .logos {
-        margin-bottom: 150px;
-    }
-
-    .hero-container {
-        margin-top: -200px;
-    }
-
-    .stadistic-data {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .stadistics-btn-container{
-        
-    flex-direction: row;
-    }
-    .news-container {
-        grid-template-columns: repeat(2, 1fr)
-    }
-
-    .discover {
-        clip-path: ellipse(105% 100% at center top);
-    }
-
-    .footer-desktop {
-        display: none;
-    }
-
-}
-/* Media query para escritorio (mayores a 1024px y hasta 1439px) */
-@media (min-width: 1024px) {
-    :root {
-        --bg-color: beige;
-        --container-width: 80%;
-    }
-
-    .mobile-nav {
-        display: none;
-    }
-
-    .desktop-nav {
-        display: flex;
-        align-items: center;
-        padding: 12px 0px;
-        gap: 16px;
-        justify-content: space-between;
-        font-size: 12px;
-    }
-
-    .desktop-nav-left {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-    }
-
-    .desktop-nav-logo-and-menu {
-        display: flex;
-    }
-
-    .desktop-nav ul {
-        display: flex;
-        gap: 16px;
-    }
-
-    .desktop-nav li {
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-        gap: 8px;
-    }
-    
-    .desktop-nav-buttons {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .desktop-nav-buttons button {
-        text-transform: uppercase;
-        padding: 10px 12px;
-        border-radius: 4px;
-    }
-
-    .header .btn-first-steps {
-        width: auto;
-        }
-
-    
-    .feature {
-        flex-direction: row;
-    }
-
-    
-
-    .feature-media,
-    .features-description {
-        flex: 1;
-    }
-
-    .features-description {
-	align-items:center ;
-	justify-content: center;
-    flex: 1;
-    }
-
-    .feauture-inverse-on-desktop {
-        flex-direction: row-reverse;
-    }
-
-    
-    .stadistics-video-container video {
-		width: 100%;
-		border-top-right-radius: 480px ;
-		border-bottom-right-radius: 480px ;
+@media (min-width: 427px) {
+	:root {
+		--container-width: 85%;
 	}
 
-    .stadistics-btn-container {
-		flex-direction: row;
-        width: 100%;
-	}
-
-    .news-container {
-        grid-template-columns: repeat(4, 1fr)
-    }
-
-    footer {
-        padding: 20px 0px;
-    }
-    .footer-mobile {
+	.show-on-mobile {
 		display: none;
 	}
 
-    .footer-desktop {
-        display: flex;
-        padding-bottom: 24px;
-    }
-    
-    .list-container{
-        display: grid;
-        gap: 8px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+	.hide-on-mobile {
+		display: inherit;
+	}
 
-    .footer-desktop img {
-        padding: 12px 20px;
-    }
+	.logos {
+		margin-bottom: 150px;
+	}
 
-    .footer-terms {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
+	.hero-container {
+		margin-top: -200px;
+	}
 
-    .footer-end-container {
-        align-items: center;
-    }
-    .footer-end-list {
-    justify-content: space-around;
-    flex: 1;
-    }
+	.stadistic-data {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
+	.stadistics-btn-container {
+		flex-direction: row;
+	}
+	.news-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-    .copyright {
-        flex: 1;
-    }
+	.discover {
+		clip-path: ellipse(105% 100% at center top);
+	}
+
+	.footer-desktop {
+		display: none;
+	}
 }
+/* Media query para escritorio (mayores a 1024px y hasta 1439px) */
+@media (min-width: 1024px) {
+	:root {
+		--bg-color: beige;
+		--container-width: 80%;
+	}
 
+	.mobile-nav {
+		display: none;
+	}
+
+	.desktop-nav {
+		display: flex;
+		align-items: center;
+		padding: 12px 0px;
+		gap: 16px;
+		justify-content: space-between;
+		font-size: 12px;
+	}
+
+	.desktop-nav-left {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+	}
+
+	.desktop-nav-logo-and-menu {
+		display: flex;
+	}
+
+	.desktop-nav ul {
+		display: flex;
+		gap: 16px;
+	}
+
+	.desktop-nav li {
+		display: flex;
+		align-items: center;
+		font-size: 10px;
+		gap: 8px;
+	}
+
+	.desktop-nav-buttons {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.desktop-nav-buttons button {
+		text-transform: uppercase;
+		padding: 10px 12px;
+		border-radius: 4px;
+	}
+
+	.header .btn-first-steps {
+		width: auto;
+	}
+
+	.feature {
+		flex-direction: row;
+	}
+
+	.feature-media,
+	.features-description {
+		flex: 1;
+	}
+
+	.features-description {
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+	}
+
+	.feauture-inverse-on-desktop {
+		flex-direction: row-reverse;
+	}
+
+	.stadistics-video-container video {
+		width: 100%;
+		border-top-right-radius: 480px;
+		border-bottom-right-radius: 480px;
+	}
+
+	.stadistics-btn-container {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.news-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	footer {
+		padding: 20px 0px;
+	}
+	.footer-mobile {
+		display: none;
+	}
+
+	.footer-desktop {
+		display: flex;
+		padding-bottom: 24px;
+	}
+
+	.list-container {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.footer-desktop img {
+		padding: 12px 20px;
+	}
+
+	.footer-terms {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.footer-end-container {
+		align-items: center;
+	}
+	.footer-end-list {
+		justify-content: space-around;
+		flex: 1;
+	}
+
+	.copyright {
+		flex: 1;
+	}
+}
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
+	.mobile-nav {
+		display: none;
+	}
 
-    .mobile-nav {
-        display: none;
-    }
-
-    .show-on-desktop-xxl {
-        display: inherit;
-    }
-
+	.show-on-desktop-xxl {
+		display: inherit;
+	}
 }
-
