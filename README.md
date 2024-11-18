@@ -1,7 +1,7 @@
 # Clon de Slack
 
 ## 🌐 Live Preview
-[Ver Demo en Vivo](https://gentle-chaja-41fa65.netlify.app)
+[Ver Demo en Vivo](https://slack-clone-page.netlify.app/)
 
 ## 🛠️ Tecnologías Usadas
 - **Lenguajes**: HTML, CSS
